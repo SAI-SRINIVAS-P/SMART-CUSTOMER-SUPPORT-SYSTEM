@@ -342,5 +342,4 @@ Returns and refunds are guidance only. Automation creates internal alerts; it do
 **END OF FIELD MANUAL**
 
 <sub>Explore the code. Trace one request. Verify every assumption.</sub>
-
 </div>
