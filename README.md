@@ -111,14 +111,14 @@ This project does **not** sync with a live shop, send customer email/SMS, submit
 
 Think of this as the equipment list before starting the shift.
 
-| Component | Install | Quick check |
-|---|---|---|
-| Java Development Kit | **JDK 21** | `java -version` |
-| Maven | **3.9+** | `mvn -version` |
-| Node.js + npm | **Node.js LTS**, Node 20+ recommended | `node -v` · `npm -v` |
-| Database | **MySQL 8.x** | `mysql --version` |
-| Local model server | **LM Studio** + a compatible instruct/chat model | Load model and start server |
-| Git | Recommended for cloning | `git --version` |
+| Component | Install | Download / setup link | Quick check |
+|---|---|---|---|
+| Java Development Kit | **JDK 21** | [Download JDK 21](https://www.oracle.com/java/technologies/downloads/#java21) | `java -version` |
+| Maven | **3.9+** | [Download Maven](https://maven.apache.org/download.cgi) | `mvn -version` |
+| Node.js + npm | **Node.js LTS**, Node 20+ recommended | [Download Node.js](https://nodejs.org/en/download) | `node -v` · `npm -v` |
+| Database | **MySQL 8.x** | [Download MySQL Installer](https://dev.mysql.com/downloads/installer/) | `mysql --version` |
+| Local model server | **LM Studio** + a compatible instruct/chat model | [Download LM Studio](https://lmstudio.ai/download) | Load model and start server |
+| Git | Recommended for cloning | [Download Git](https://git-scm.com/downloads) | `git --version` |
 
 The commands below use **Windows PowerShell**. The project can be edited on other operating systems, but shell variable syntax will differ.
 
