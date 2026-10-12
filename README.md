@@ -15,7 +15,7 @@
 <strong>AI-assisted customer care · Order intelligence · Internal delivery automation</strong>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=15&amp;duration=2400&amp;pause=650&amp;color=6FE2FF&amp;center=true&amp;vCenter=true&amp;width=850&amp;height=34&amp;lines=AI+CUSTOMER+CARE;ORDER+INTELLIGENCE;DELIVERY+AUTOMATION" alt="Animated customer care, order intelligence, and delivery automation tagline">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=700&amp;size=23&amp;duration=2200&amp;pause=700&amp;color=6FE2FF&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=48&amp;lines=SMART-CUSTOMER-SUPPORT-SYSTEM" alt="Animated project title: SMART-CUSTOMER-SUPPORT-SYSTEM">
 </p>
 
 <p>Built with Java and Spring Boot, React, MySQL, and a locally hosted language model.</p>
@@ -27,7 +27,7 @@
 The looping walkthrough below cycles through all five pages from the website recording: Overview, AI Support, Orders, Policies, and Automation. Each view is displayed for about five seconds.
 
 <p align="center">
-  <img src="docs/project-tour.svg" width="100%" alt="Animated slideshow of Overview, AI Support, Orders, Policies, and Automation">
+  <img src="docs/project-tour.gif" width="100%" alt="Animated slideshow of real SMART-CUSTOMER-SUPPORT-SYSTEM website screens: Overview, AI Support, Orders, Policies, and Automation">
 </p>
 
 <p align="center"><em>Overview → AI Support → Orders → Policies → Automation · Repeats continuously</em></p>
