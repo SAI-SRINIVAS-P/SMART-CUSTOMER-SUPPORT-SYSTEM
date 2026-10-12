@@ -1,6 +1,10 @@
 <div align="center">
 
 <img src="docs/ops-field-manual.svg" width="100%" alt="Animated Support Operations Field Manual banner for SMART-CUSTOMER-SUPPORT-SYSTEM">
+
+<p align="center">
+  <img src="https://github.com/SAI-SRINIVAS-P/SMART-CUSTOMER-SUPPORT-SYSTEM/actions/workflows/ci.yml/badge.svg" alt="GitHub Actions CI status">
+</p>
 </div>
 
 <table>
