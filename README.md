@@ -14,6 +14,10 @@
 
 <strong>AI-assisted customer care · Order intelligence · Internal delivery automation</strong>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=15&amp;duration=2400&amp;pause=650&amp;color=6FE2FF&amp;center=true&amp;vCenter=true&amp;width=850&amp;height=34&amp;lines=AI+CUSTOMER+CARE;ORDER+INTELLIGENCE;DELIVERY+AUTOMATION" alt="Animated customer care, order intelligence, and delivery automation tagline">
+</p>
+
 <p>Built with Java and Spring Boot, React, MySQL, and a locally hosted language model.</p>
 
 </div>
