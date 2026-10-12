@@ -1,8 +1,8 @@
 <div align="center">
 
-# SMART-CUSTOMER-SUPPORT-SYSTEM
+<img src="docs/animated-title.svg" width="100%" alt="Animated graphical title: SMART-CUSTOMER-SUPPORT-SYSTEM">
 
-### A local-first workspace for customer support, order assistance, policy guidance, and delivery monitoring.
+# SMART-CUSTOMER-SUPPORT-SYSTEM
 
 <p>
 <img src="https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21">
@@ -12,9 +12,21 @@
 <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
 </p>
 
-<a href="#features">Features</a> • <a href="#project-tour">Project tour</a> • <a href="#technology-stack">Tech stack</a> • <a href="#prerequisites">Prerequisites</a> • <a href="#run-locally">Run locally</a> • <a href="#troubleshooting">Troubleshooting</a>
+<strong>AI-assisted customer care · Order intelligence · Internal delivery automation</strong>
+
+<p>Built with Java and Spring Boot, React, MySQL, and a locally hosted language model.</p>
 
 </div>
+
+## 🎬 Animated project walkthrough
+
+The looping walkthrough below cycles through all five pages from the website recording: Overview, AI Support, Orders, Policies, and Automation. Each view is displayed for about five seconds.
+
+<p align="center">
+  <img src="docs/project-tour.svg" width="100%" alt="Animated slideshow of Overview, AI Support, Orders, Policies, and Automation">
+</p>
+
+<p align="center"><em>Overview → AI Support → Orders → Policies → Automation · Repeats continuously</em></p>
 
 ---
 
@@ -34,13 +46,6 @@
 | ⚙️ **Delivery Automation** | Periodically scans overdue orders that remain `PROCESSING` or `SHIPPED`, creates internal notifications, records run history, prevents duplicate alerts through service logic, and allows staff to manually run scans or acknowledge alerts. |
 
 **Automation boundary:** The current automation creates internal alerts only. It does not send customer emails/SMS, issue refunds, approve returns, cancel orders, or change order status automatically.
-
-## Project tour
-
-The animated slideshow and screenshots below are captured from the supplied recording of the running website. The slideshow cycles through **Overview**, **AI Support**, **Orders**, **Policies**, and **Automation**.
-
-![Animated slideshow of SMART-CUSTOMER-SUPPORT-SYSTEM pages](docs/project-tour.gif)
-
 
 ## Technology stack and tools
 
