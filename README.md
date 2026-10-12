@@ -44,10 +44,10 @@ Order-aware guidance and internal alerts
 
 **A practical support-workflow project, not just a chat window.**
 
-<a href="#the-screen-atlas">SCREEN ATLAS</a> &nbsp; ◇ &nbsp;
-<a href="#trace-a-request">TRACE A REQUEST</a> &nbsp; ◇ &nbsp;
-<a href="#boot-sequence">BOOT SEQUENCE</a> &nbsp; ◇ &nbsp;
-<a href="#incident-log">INCIDENT LOG</a>
+<strong>SCREEN ATLAS</strong> &nbsp; ◇ &nbsp;
+<strong>TRACE A REQUEST</strong> &nbsp; ◇ &nbsp;
+<strong>BOOT SEQUENCE</strong> &nbsp; ◇ &nbsp;
+<strong>INCIDENT LOG</strong>
 
 </div>
 
