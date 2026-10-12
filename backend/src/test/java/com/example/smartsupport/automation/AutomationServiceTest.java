@@ -30,8 +30,6 @@ class AutomationServiceTest {
     void setUp() {
         service = new AutomationService(orders, notifications, runs, 1L, true, 300_000L);
         when(runs.save(any(AutomationRunEntity.class))).thenAnswer(call -> call.getArgument(0));
-        when(notifications.saveAndFlush(any(AutomationNotificationEntity.class)))
-            .thenAnswer(call -> call.getArgument(0));
     }
 
     @Test
@@ -39,6 +37,8 @@ class AutomationServiceTest {
         OrderEntity overdue = new OrderEntity("ORD-LATE-1", 1L, "SHIPPED", new BigDecimal("45.00"), LocalDate.now().minusDays(1));
         when(orders.findAllByCustomerIdOrderByIdDesc(1L)).thenReturn(List.of(overdue));
         when(notifications.existsByEventKey(anyString())).thenReturn(false);
+        when(notifications.saveAndFlush(any(AutomationNotificationEntity.class)))
+            .thenAnswer(call -> call.getArgument(0));
 
         AutomationService.AutomationRunView run = service.runDelayedDeliveryCheck("MANUAL");
 
