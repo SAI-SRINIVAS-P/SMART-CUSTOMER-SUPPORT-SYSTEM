@@ -2,9 +2,6 @@
 
 <img src="docs/ops-field-manual.svg" width="100%" alt="Animated Support Operations Field Manual banner for SMART-CUSTOMER-SUPPORT-SYSTEM">
 
-# SMART-CUSTOMER-SUPPORT-SYSTEM
-
-<sub>CASE FILE 001 &nbsp; / &nbsp; CUSTOMER CARE SYSTEMS &nbsp; / &nbsp; LOCAL-FIRST DEMO</sub>
 
 </div>
 
