@@ -17,8 +17,8 @@
 
 <a href="#01--take-the-tour">Take the tour</a> &nbsp;·&nbsp;
 <a href="#02--how-a-question-travels">How it works</a> &nbsp;·&nbsp;
-<a href="#03--launch-it-on-your-laptop">Run it</a> &nbsp;·&nbsp;
-<a href="#04--when-something-breaks">Troubleshooting</a>
+<a href="#04--launch-it-on-your-laptop">Run it</a> &nbsp;·&nbsp;
+<a href="#05--when-something-breaks">Troubleshooting</a>
 
 </div>
 
