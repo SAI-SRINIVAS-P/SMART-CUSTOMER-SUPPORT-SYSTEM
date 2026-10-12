@@ -1,0 +1,1 @@
+target/\nnode_modules/\ndist/\n.env\n*.log\n.idea/\n.vscode/\n*.tsbuildinfo

@@ -1,0 +1,32 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/smartsupport?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ${DB_USERNAME:smartsupport}
+    password: ${DB_PASSWORD:change-this-password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  ai:
+    openai:
+      base-url: ${LM_STUDIO_BASE_URL:http://localhost:1234/v1}
+      api-key: ${LM_STUDIO_API_KEY:lm-studio}
+      chat:
+        options:
+          model: ${LM_STUDIO_MODEL:local-model}
+          temperature: 0.1
+          max-tokens: 400
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+# Phase 3 automation: internal notifications only; no customer emails are sent.
+app:
+  demo-customer-id: 1
+  automation:
+    scheduled-enabled: ${AUTOMATION_ENABLED:true}
+    scan-interval-ms: ${AUTOMATION_SCAN_INTERVAL_MS:300000}
+    initial-delay-ms: ${AUTOMATION_INITIAL_DELAY_MS:30000}
