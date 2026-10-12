@@ -41,17 +41,6 @@ The animated slideshow and screenshots below are captured from the supplied reco
 
 ![Animated slideshow of SMART-CUSTOMER-SUPPORT-SYSTEM pages](docs/project-tour.gif)
 
-| Overview | AI Support |
-|---|---|
-| ![Overview dashboard](docs/screenshots/overview.jpg) | ![AI Support chat](docs/screenshots/ai-support.jpg) |
-
-| Orders | Policies |
-|---|---|
-| ![Orders page](docs/screenshots/orders.jpg) | ![Policies page](docs/screenshots/policies.jpg) |
-
-| Automation |
-|---|
-| ![Automation dashboard](docs/screenshots/automation.jpg) |
 
 ## Technology stack and tools
 
