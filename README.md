@@ -1,119 +1,182 @@
 <div align="center">
 
-<img src="docs/animated-title.svg" width="100%" alt="Animated graphical title: SMART-CUSTOMER-SUPPORT-SYSTEM">
+<img src="docs/animated-title.svg" width="100%" alt="Animated SMART-CUSTOMER-SUPPORT-SYSTEM title graphic">
 
 # SMART-CUSTOMER-SUPPORT-SYSTEM
 
 <p>
-<img src="https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21">
-<img src="https://img.shields.io/badge/Spring%20Boot-3.4.5-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
-<img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" alt="React">
-<img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-<img src="https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+<img src="https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 21">
+<img src="https://img.shields.io/badge/Spring_Boot-3.4.5-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot 3.4.5">
+<img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=20232A" alt="React 18">
+<img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript 5.7">
+<img src="https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL 8">
+<img src="https://img.shields.io/badge/AI-local%20inference-8A70FF?style=flat-square" alt="Local AI inference">
 </p>
 
-<strong>AI-assisted customer care · Order intelligence · Internal delivery automation</strong>
+**One workspace. Five support views. Local-first AI.**
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=700&amp;size=19&amp;duration=2200&amp;pause=650&amp;color=6FE2FF&amp;center=true&amp;vCenter=true&amp;width=1000&amp;height=42&amp;lines=INTELLIGENT+CUSTOMER+CARE;ORDER+INSIGHTS;DELIVERY+AUTOMATION" alt="Animated tagline: intelligent customer care, order insights, delivery automation">
-</p>
-
-<p>Built with Java and Spring Boot, React, MySQL, and a locally hosted language model.</p>
+<a href="#01--take-the-tour">Take the tour</a> &nbsp;·&nbsp;
+<a href="#02--how-a-question-travels">How it works</a> &nbsp;·&nbsp;
+<a href="#03--launch-it-on-your-laptop">Run it</a> &nbsp;·&nbsp;
+<a href="#04--when-something-breaks">Troubleshooting</a>
 
 </div>
 
-## 🎬 Animated project walkthrough
+---
 
-The looping **high-resolution vector walkthrough** cycles through Overview, AI Support, Orders, Policies, and Automation. It is rendered as vector artwork instead of a tiny upscaled GIF, so labels and UI panels stay crisp at different screen sizes.
+## 01 / Take the tour
 
 <p align="center">
-  <img src="docs/project-tour.svg" width="100%" alt="High-resolution animated vector slideshow of the Overview, AI Support, Orders, Policies, and Automation pages">
+  <img src="docs/project-tour.svg" width="100%" alt="Animated vector walkthrough of the Overview, AI Support, Orders, Policies, and Automation views">
 </p>
 
-<p align="center"><em>Overview → AI Support → Orders → Policies → Automation · Repeats continuously</em></p>
+<p align="center"><sub>The visual tour is a looping vector recreation of the five page layouts. It is deliberately rendered as SVG to keep UI labels and panels sharp instead of enlarging a low-resolution GIF.</sub></p>
+
+This project brings customer questions and support operations into one interface. The React frontend talks to a Java/Spring Boot API, which reads demo order data from MySQL and connects to a locally hosted language model through LM Studio.
+
+> **Project boundary:** This is a learning and portfolio demo. It does not connect to a live shop, submit real return requests, issue refunds, send customer emails, or automatically cancel orders.
+
+### The five stops
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**01 · Overview**
+
+A dashboard-style landing view for a quick look at demo order activity and support entry points.
+
+</td>
+<td width="50%" valign="top">
+
+**02 · AI Support**
+
+A chat interface that combines a local model with backend order lookup and return-policy handling.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**03 · Orders**
+
+Search, inspect, create, and update demo orders, including status and estimated delivery information.
+
+</td>
+<td width="50%" valign="top">
+
+**04 · Policies**
+
+A focused place to read the demo return/refund guidance used by the support flow.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+**05 · Automation**
+
+A scheduled scan checks for overdue orders that remain `PROCESSING` or `SHIPPED`, creates internal alerts, stores run history, and lets staff run a check or acknowledge an alert.
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Overview
+## 02 / How a question travels
 
-**SMART-CUSTOMER-SUPPORT-SYSTEM** is a full-stack customer-support demo built with a Java/Spring Boot REST API and a React interface. It connects a locally hosted language model through LM Studio with MySQL-backed order data, policy guidance, and scheduled overdue-delivery checks.
-
-> This is a local learning and portfolio project. Orders and policy data are demo data. It does not connect to a real store or submit real return/refund requests.
-
-## Features
-
-| Area | What it does |
-|---|---|
-| 💬 **AI Support** | Chat UI backed by Spring AI and an OpenAI-compatible local LM Studio endpoint. Order lookup tools ground answers in demo data. Common return-policy questions have deterministic handling and empty model answers get a fallback. |
-| 📦 **Order Management** | View/search demo orders, create or update order records, and work with order status, estimated delivery date, and total amount. |
-| 📚 **Policies** | Dedicated return/refund policy guidance that explains the limitations of the demo data. |
-| ⚙️ **Delivery Automation** | Periodically scans overdue orders that remain `PROCESSING` or `SHIPPED`, creates internal notifications, records run history, prevents duplicate alerts through service logic, and allows staff to manually run scans or acknowledge alerts. |
-
-**Automation boundary:** The current automation creates internal alerts only. It does not send customer emails/SMS, issue refunds, approve returns, cancel orders, or change order status automatically.
-
-## Technology stack and tools
-
-| Area | Technology / tool | Purpose |
-|---|---|---|
-| Backend language | Java 21 | Business logic and REST API |
-| Backend framework | Spring Boot 3.4.5 | Application and API runtime |
-| AI integration | Spring AI 1.0.0 | Chat client and model integration |
-| Local model server | LM Studio | Runs a local model with an OpenAI-compatible API, default port `1234` |
-| Persistence | Spring Data JPA, Hibernate | ORM and database access |
-| Database | MySQL 8.x | Demo orders and automation records |
-| Frontend | React 18, TypeScript 5.7 | User interface |
-| Frontend tooling | Vite 6, npm | Development server and build |
-| Icons | lucide-react | Interface icons |
-| Build and tests | Maven, Spring Boot Test | Backend dependencies, build, and tests |
-| Editor | VS Code or another Java IDE | Editing and debugging |
-| Source control | Git and GitHub | Version control and repository hosting |
-
-## Architecture
+This is the basic request path from browser to answer:
 
 ```mermaid
 flowchart LR
-    User[Customer / Staff] --> UI[React + TypeScript]
-    UI --> API[Spring Boot REST API]
-    API --> Chat[Spring AI Chat Service]
-    Chat <--> LM[LM Studio Local Model]
-    API --> Order[Order and Policy Services]
-    API --> DB[(MySQL)]
-    Scheduler[Scheduled Delivery Scan] --> DB
-    Scheduler --> Alerts[Internal Alerts and Run History]
-    Alerts --> UI
+    A["Customer or staff"] --> B["React interface"]
+    B --> C["Spring Boot API"]
+    C --> D["Support and order services"]
+    D --> E[("MySQL demo data")]
+    C <--> F["Spring AI"]
+    F <--> G["LM Studio local model"]
+    E --> H["Grounded order details"]
+    G --> I["Generated language"]
+    H --> J["Final support response"]
+    I --> J
 ```
 
-## Prerequisites
+The AI is one part of the system, not the whole system. Java handles application rules and database access; MySQL stores the demo records; Spring AI connects the backend to the local model. Return-policy questions also have a deterministic backend path, because business-critical guidance should not depend entirely on a small model guessing what to do.
 
-Install these before starting the project:
+### What the system can and cannot do
 
-| Requirement | Recommended version/setup | Verify |
+- **Can:** answer general support questions, look up demo order information, show policy guidance, manage demo orders, detect overdue delivery dates, and record internal automation alerts.
+- **Does not yet:** sync a real commerce store, email customers, execute returns/refunds, assign a live human-agent ticket queue, or run production-grade access control.
+
+---
+
+## 03 / The build recipe
+
+The stack is split by responsibility rather than by marketing label.
+
+<details open>
+<summary><strong>Backend and business rules</strong></summary>
+
+- **Java 21** for the application code.
+- **Spring Boot 3.4.5** for REST endpoints and application runtime.
+- **Spring AI 1.0.0** for model integration.
+- **Spring Data JPA + Hibernate** for persistence mapping.
+- **Spring Boot Validation and Actuator** for validation and health/management endpoints.
+- **Maven** for dependency management, tests, and execution.
+</details>
+
+<details>
+<summary><strong>AI and data</strong></summary>
+
+- **LM Studio** serves a local model through an OpenAI-compatible API, normally at `http://localhost:1234/v1`.
+- **MySQL 8.x** stores orders and automation records.
+- **A small instruct/chat model** is recommended for low-memory laptops; model speed and answer quality depend on hardware and model choice.
+- A paid OpenAI API key is not required for the configured local workflow.
+</details>
+
+<details>
+<summary><strong>Frontend and developer tools</strong></summary>
+
+- **React 18 + TypeScript 5.7** build the interface.
+- **Vite 6 + npm** run and bundle the frontend.
+- **lucide-react** supplies icons.
+- **Git + GitHub** support version control; **VS Code or another Java IDE** can be used for editing and debugging.
+</details>
+
+---
+
+## 04 / Launch it on your laptop
+
+Follow the sequence in order. Start MySQL and LM Studio before testing a full chat flow.
+
+### Station A · Install the prerequisites
+
+| Install | Recommended version | Check it in a terminal |
 |---|---|---|
-| Operating system | Windows 10/11, macOS, or Linux | — |
-| Java JDK | **JDK 21** | `java -version` |
+| Java JDK | 21 | `java -version` |
 | Apache Maven | 3.9+ | `mvn -version` |
-| Node.js and npm | Node.js LTS, Node 20+ recommended | `node -v` and `npm -v` |
-| MySQL Server | MySQL 8.x | `mysql --version` |
-| LM Studio | Desktop app for your OS | Open LM Studio |
-| Local instruct/chat model | Choose a model your laptop can run; this project was developed with a small Qwen instruct model | Load model and start server |
-| Git | Optional, for cloning/updating | `git --version` |
+| Node.js + npm | Node.js LTS, Node 20+ recommended | `node -v` and `npm -v` |
+| MySQL Server | 8.x | `mysql --version` |
+| LM Studio | Desktop app for your OS | Open the application |
+| Git | Optional, useful for cloning | `git --version` |
 
-**Low-RAM note:** Prefer a small quantized model suited to your laptop. Model speed and compatibility depend on available memory and hardware. No paid OpenAI API key is required for the configured local LM Studio workflow.
+Supported setup examples in this guide use Windows PowerShell. Equivalent commands can be run in a macOS/Linux shell with environment-variable syntax adjusted.
 
-## Installation
+**Low-memory laptop tip:** choose a small quantized model compatible with your available RAM. You do not need a large model merely to run the Java backend or frontend.
 
-### 1. Download the project
+### Station B · Get the code
 
 ```powershell
 git clone https://github.com/SAI-SRINIVAS-P/SMART-CUSTOMER-SUPPORT-SYSTEM.git
 cd SMART-CUSTOMER-SUPPORT-SYSTEM
 ```
 
-Or on GitHub select **Code → Download ZIP**, then extract the archive.
+Prefer not to use Git? Open the repository on GitHub, choose **Code → Download ZIP**, then extract it.
 
-### 2. Create the MySQL database and user
+### Station C · Prepare MySQL
 
-Open MySQL Workbench or sign in to the MySQL command-line client as an administrator and execute:
+In MySQL Workbench or a MySQL command-line session with administrator permissions, run:
 
 ```sql
 CREATE DATABASE IF NOT EXISTS smartsupport;
@@ -125,11 +188,11 @@ GRANT ALL PRIVILEGES ON smartsupport.* TO 'smartsupport'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-If the user already exists, use `ALTER USER` to set its password. Keep real passwords local; never commit them to GitHub. The backend's default username is `smartsupport`, and its default password is only a placeholder.
+If the account already exists, use `ALTER USER` to reset its password. Keep the real password local and never commit it to GitHub.
 
-### 3. Configure environment variables (PowerShell)
+### Station D · Set local environment values
 
-Set these in the same PowerShell window from which you start the backend:
+In the **same PowerShell window** you will use for the backend:
 
 ```powershell
 $env:DB_USERNAME = "smartsupport"
@@ -139,21 +202,19 @@ $env:LM_STUDIO_API_KEY = "lm-studio"
 $env:LM_STUDIO_MODEL = "local-model"
 ```
 
-If chat requests fail, set `LM_STUDIO_MODEL` to the model identifier exposed by your LM Studio server. The API key value shown here is a local placeholder, not a real OpenAI API key.
+The LM Studio API key value above is a local placeholder, not a real OpenAI credential. If chat cannot find the model, set `LM_STUDIO_MODEL` to the model identifier exposed by your LM Studio server.
 
-### 4. Start the local model server
+### Station E · Start the local AI server
 
-1. Open LM Studio and download a model supported by your laptop.
-2. Load the model.
-3. Open its **Developer / Local Server** section (the label may vary by LM Studio version).
+1. Open LM Studio and download a model your laptop can run.
+2. Load the model into memory.
+3. Open the **Developer / Local Server** area. The label can vary by LM Studio version.
 4. Start the OpenAI-compatible server at `http://localhost:1234`.
-5. Keep LM Studio running while testing AI chat.
+5. Leave LM Studio running while you use AI Support.
 
-## Run locally
+### Station F · Start the backend
 
-Use **two terminal windows** from the project root.
-
-### Terminal 1: Start the backend
+Open terminal window **#1** from the project root:
 
 ```powershell
 cd backend
@@ -161,16 +222,18 @@ mvn test
 mvn spring-boot:run
 ```
 
-Backend base URL: **http://localhost:8080**
+The backend should listen at **http://localhost:8080**.
 
 Useful local endpoints:
 - Health: `http://localhost:8080/api/health`
 - Orders: `http://localhost:8080/api/orders`
 - Policy: `http://localhost:8080/api/policy`
 
-The development configuration uses Hibernate's `ddl-auto: update` to create/update tables. The demo seeder inserts sample orders only when the orders table is empty.
+The development configuration uses Hibernate `ddl-auto: update` to create/update tables. The demo seeder inserts sample orders only when the orders table is empty.
 
-### Terminal 2: Start the frontend
+### Station G · Start the frontend
+
+Open terminal window **#2** from the project root:
 
 ```powershell
 cd frontend
@@ -178,38 +241,41 @@ npm install
 npm run dev
 ```
 
-Open the Vite URL printed in the terminal, usually **http://localhost:5173**.
+Open the local URL printed by Vite, usually **http://localhost:5173**.
 
-To build the frontend:
+For a frontend production build:
 
 ```powershell
 npm run build
 ```
 
-### Smoke-test the application
+### Station H · Run the first smoke test
 
-1. Open **Overview** and confirm the backend indicator shows online.
-2. In **AI Support**, ask `Where is order ORD-1001?` and `What is your return policy?`.
-3. In **Orders**, search for `ORD-1001`.
-4. In **Automation**, click **Run check now**.
-5. To test an overdue alert, set an order's estimated delivery date to yesterday and keep its status as `SHIPPED` or `PROCESSING`. Run a scan, verify the alert, run the scan again to check for duplicates, then restore the date.
+1. Open **Overview** and check that the backend indicator shows online.
+2. Under **AI Support**, ask `Where is order ORD-1001?` and `What is your return policy?`.
+3. Under **Orders**, search for `ORD-1001`.
+4. Under **Automation**, select **Run check now**.
+5. To test an overdue alert, set an order's estimated delivery date to yesterday while leaving the status `SHIPPED` or `PROCESSING`. Run a scan, confirm the alert, run it again to check for duplicates, then restore the original delivery date.
 
-## Troubleshooting
+---
+
+## 05 / When something breaks
+
+Expand the closest symptom and work from the first meaningful error in the backend terminal.
 
 <details>
-<summary><strong>Backend cannot connect to MySQL</strong></summary>
+<summary><strong>🔌 Spring Boot cannot connect to MySQL</strong></summary>
 
-- Confirm the MySQL service is running.
-- Confirm the `smartsupport` database exists.
-- Set `DB_USERNAME` and `DB_PASSWORD` in the same terminal used to run Maven.
-- Check that the JDBC URL in `backend/src/main/resources/application.yml` points to `localhost:3306`.
+- Confirm the MySQL service is running and the `smartsupport` schema exists.
+- Check the JDBC URL in `backend/src/main/resources/application.yml`; the development default uses `localhost:3306`.
+- Set `DB_USERNAME` and `DB_PASSWORD` in the same PowerShell window used for `mvn spring-boot:run`.
 - Restart Spring Boot after changing environment variables.
 </details>
 
 <details>
-<summary><strong>MySQL reports “Access denied for user 'smartsupport'@'localhost'”</strong></summary>
+<summary><strong>🔐 MySQL says “Access denied for user 'smartsupport'@'localhost'”</strong></summary>
 
-The password or permissions do not match. Sign in as a MySQL administrator and run:
+The account password or privileges do not match. Sign in to MySQL as an administrator and run:
 
 ```sql
 ALTER USER 'smartsupport'@'localhost'
@@ -218,83 +284,86 @@ GRANT ALL PRIVILEGES ON smartsupport.* TO 'smartsupport'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-Set `$env:DB_PASSWORD` to the same password and restart Spring Boot.
+Set `$env:DB_PASSWORD` to the same password and restart the backend.
 </details>
 
 <details>
-<summary><strong>MySQL reports “Table 'smartsupport.orders' doesn't exist” or a table-creation permission error</strong></summary>
+<summary><strong>🧱 MySQL says a table is missing or cannot be created</strong></summary>
 
-- Check the first database error in the backend console.
+- Read the first database error and its `Caused by` section in the backend terminal.
 - Confirm the application user has privileges on the `smartsupport` schema, including table creation for this development setup.
-- A database administrator can grant schema privileges using the SQL above.
-- Restart the backend after the permissions are fixed; Hibernate should create/update tables with `ddl-auto: update`.
+- Once permissions are corrected, restart Spring Boot. Hibernate should create/update tables with `ddl-auto: update`.
 </details>
 
 <details>
-<summary><strong>“mvn” or “npm” is not recognized</strong></summary>
+<summary><strong>🛠️ “mvn” or “npm” is not recognized</strong></summary>
 
-Install JDK 21 and Maven, plus Node.js LTS (which includes npm). Close and reopen PowerShell, then verify with `java -version`, `mvn -version`, `node -v`, and `npm -v`.
+Install JDK 21 and Maven, then install Node.js LTS (which includes npm). Close and reopen PowerShell and confirm `java -version`, `mvn -version`, `node -v`, and `npm -v` work.
 </details>
 
 <details>
-<summary><strong>Frontend says the backend is offline or API requests fail</strong></summary>
+<summary><strong>🌐 Frontend says the backend is offline</strong></summary>
 
-- Confirm the backend has started successfully on port 8080.
-- Check the backend terminal for startup errors.
-- Check the browser developer tools Network tab for failed `/api` requests.
-- The frontend currently uses `http://localhost:8080/api` in `frontend/src/App.tsx`; update it if you configure a different backend port.
+- Confirm Spring Boot started successfully on port 8080.
+- Check the backend terminal for startup failures.
+- Use the browser developer tools **Network** tab to find failing `/api` requests.
+- The frontend API base URL is configured in `frontend/src/App.tsx`; update it if the backend runs on another port.
 </details>
 
 <details>
-<summary><strong>AI chat returns an empty/generic response or cannot reach LM Studio</strong></summary>
+<summary><strong>🧠 AI Support returns an empty answer or cannot reach LM Studio</strong></summary>
 
-- Confirm the model is loaded in LM Studio and the local server is started on port 1234.
+- Confirm the model is loaded and the local server is running on port 1234.
 - Check `LM_STUDIO_BASE_URL` and `LM_STUDIO_MODEL`.
-- Test with a simple question such as `Where is order ORD-1001?`.
-- Smaller models may struggle with complex prompts. Return-policy questions have a deterministic backend path, while general responses still rely on the local model.
+- Start with a simple prompt such as `Where is order ORD-1001?`.
+- Small models can struggle with complex instructions. Common return-policy questions have a deterministic backend path; general replies still depend on the local model.
 </details>
 
 <details>
-<summary><strong>Automation page says the API is unavailable</strong></summary>
+<summary><strong>⚙️ Automation page cannot load</strong></summary>
 
-- Confirm this repository's automation backend classes are present.
-- Restart the backend and wait for successful startup.
-- Inspect the browser Network tab for `/api/automation/...` errors.
-- Verify the database is reachable.
+- Confirm the automation backend classes are present in your local copy.
+- Restart Spring Boot and check its startup output.
+- Check the browser Network tab for `/api/automation/...` failures.
+- Verify MySQL is reachable and inspect the first backend exception.
 </details>
 
 <details>
-<summary><strong>Port 8080 or 5173 is already in use</strong></summary>
+<summary><strong>🚦 Port 8080 or 5173 is already in use</strong></summary>
 
-Stop the other application using the port or select a different port. If the backend port changes, update the API base URL in `frontend/src/App.tsx`.
+Stop the other process using the port or configure a different port. If the backend port changes, also update the frontend API base URL in `frontend/src/App.tsx`.
 </details>
 
-If the problem continues, copy the **first meaningful error and its “Caused by” section** from the backend terminal when opening an issue. Never post real passwords, API keys, or other secrets.
+If the problem survives these checks, keep the **first meaningful exception and its “Caused by” section** when asking for help. Never attach real passwords, API keys, or other secrets.
 
-## Configuration reference
+---
 
-| Variable | Default | Meaning |
+## 06 / Settings card
+
+| Variable | Default | Why you might change it |
 |---|---|---|
-| `DB_USERNAME` | `smartsupport` | MySQL application user |
-| `DB_PASSWORD` | `change-this-password` | Placeholder database password; set your own locally |
-| `LM_STUDIO_BASE_URL` | `http://localhost:1234/v1` | Local model API base |
-| `LM_STUDIO_API_KEY` | `lm-studio` | Local placeholder value |
-| `LM_STUDIO_MODEL` | `local-model` | Model identifier sent by Spring AI |
-| `AUTOMATION_ENABLED` | `true` | Enable scheduled scans |
-| `AUTOMATION_SCAN_INTERVAL_MS` | `300000` | Scan interval in milliseconds (5 minutes) |
-| `AUTOMATION_INITIAL_DELAY_MS` | `30000` | Initial delay in milliseconds |
+| `DB_USERNAME` | `smartsupport` | MySQL application account |
+| `DB_PASSWORD` | `change-this-password` | Set your own local account password |
+| `LM_STUDIO_BASE_URL` | `http://localhost:1234/v1` | Address of the local model server |
+| `LM_STUDIO_API_KEY` | `lm-studio` | Local compatibility placeholder |
+| `LM_STUDIO_MODEL` | `local-model` | Model identifier exposed by LM Studio |
+| `AUTOMATION_ENABLED` | `true` | Enable or disable scheduled scans |
+| `AUTOMATION_SCAN_INTERVAL_MS` | `300000` | Scan interval, in milliseconds |
+| `AUTOMATION_INITIAL_DELAY_MS` | `30000` | Delay before the first scan, in milliseconds |
 
-## Repository structure
+---
+
+## 07 / Project map
 
 ```text
 SMART-CUSTOMER-SUPPORT-SYSTEM/
 ├── backend/
 │   ├── src/main/java/com/example/smartsupport/
-│   │   ├── automation/     # Delivery scans, notifications, history
-│   │   ├── chat/           # Chat, policy answers, model tools
-│   │   ├── order/          # Order API and persistence
-│   │   ├── seed/           # Demo orders
-│   │   └── config/         # Web configuration
+│   │   ├── automation/     scheduled scans, alerts, run history
+│   │   ├── chat/           chat flow, policy answers, model tools
+│   │   ├── order/          order API and persistence
+│   │   ├── seed/           demo order data
+│   │   └── config/         web configuration
 │   ├── src/main/resources/application.yml
 │   └── pom.xml
 ├── frontend/
@@ -302,28 +371,22 @@ SMART-CUSTOMER-SUPPORT-SYSTEM/
 │   ├── src/style.css
 │   └── package.json
 └── docs/
-    ├── project-tour.gif
-    └── screenshots/
+    ├── animated-title.svg
+    └── project-tour.svg
 ```
 
-## Scope and limitations
+## 08 / Before calling it production-ready
 
-- This is a local portfolio/demo project, not a production-ready service.
-- Demo orders are not synchronized with a live e-commerce platform.
-- Return-policy answers are guidance only; requests are not submitted or approved and refunds are not issued.
-- Delivery automation creates internal notifications only; customer email/SMS is not implemented.
-- Before production use, add authentication and authorization, secure secret management, database migrations, deployment configuration, and monitoring.
+This repository is intended for learning and portfolio demonstration. Before using it with real customers, add and validate authentication and authorization, secure secret management, database migrations, deployment configuration, monitoring, backups, and an auditable approval flow for sensitive actions.
 
-## Contributing
+Returns and refunds are **guidance only** in this version. Delivery automation creates internal notifications; it does not send emails or SMS and does not change order status automatically.
 
-Before submitting a change, run `mvn test` from `backend` and `npm run build` from `frontend`. Include clear reproduction steps when reporting a bug.
-
-## License
-
-See [LICENSE](LICENSE).
+---
 
 <div align="center">
 
-**SMART-CUSTOMER-SUPPORT-SYSTEM** · Built for learning, experimentation, and portfolio demonstration.
+**Built to make the support path clearer.**
+
+<sub>Explore the code, run it locally, test the workflows, and improve it one well-understood feature at a time.</sub>
 
 </div>
