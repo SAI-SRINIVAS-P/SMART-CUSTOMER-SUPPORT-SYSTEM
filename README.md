@@ -1,8 +1,6 @@
 <div align="center">
 
 <img src="docs/ops-field-manual.svg" width="100%" alt="Animated Support Operations Field Manual banner for SMART-CUSTOMER-SUPPORT-SYSTEM">
-
-
 </div>
 
 <table>
@@ -337,7 +335,7 @@ Returns and refunds are guidance only. Automation creates internal alerts; it do
 
 <div align="center">
 
-**END OF CASE FILE 001**
+**END OF FIELD MANUAL**
 
 <sub>Explore the code. Trace one request. Verify every assumption.</sub>
 
